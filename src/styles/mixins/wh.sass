@@ -1,0 +1,11 @@
+@mixin wh($w, $h: $w)
+  +_((width: $w, height: $h))
+
+@mixin height($n)
+  +_((height: $n))
+
+@mixin width($n)
+  +_((width: $n))
+
+@mixin max-width($n)
+  +_((max-width: $n))

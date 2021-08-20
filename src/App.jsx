@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Header } from './Header.jsx';
-import './App.scss';
+import './App.sass';
 
 export const App = () => {
   const [counter, setCounter] = useState(1);

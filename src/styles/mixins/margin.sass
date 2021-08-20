@@ -1,0 +1,17 @@
+@mixin margin-y($top, $bottom: $top)
+  +_(( margin-top: $top, margin-bottom: $bottom))
+
+@mixin margin-x($left, $right: $left)
+  +_(( margin-left: $left, margin-right: $right))
+
+@mixin margin-top($n)
+  +_(( margin-top: $n,))
+
+@mixin margin-bottom($n)
+  +_((margin-bottom: $n))
+
+@mixin margin-left($n)
+  +_((margin-left: $n))
+
+@mixin margin-right($n)
+  +_((margin-right: $n))

@@ -1,5 +1,0 @@
-@mixin svg-icon($w: auto, $h: $w) {
-  @include wh($w, $h);
-
-  position: relative;
-}

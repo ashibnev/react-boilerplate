@@ -40,13 +40,5 @@ module.exports = merge(baseConfig, {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-
-    // we create a global variable that
-    // we use in pug and we can use in js
-    // https://webpack.js.org/plugins/define-plugin/
-    // In pug - var DATA = self.htmlWebpackPlugin.options.DATA
-    // new webpack.DefinePlugin({
-    //   PRODUCTION: JSON.stringify(false),
-    // }),
   ],
 });
