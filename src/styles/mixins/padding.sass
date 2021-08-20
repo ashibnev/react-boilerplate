@@ -1,0 +1,20 @@
+@mixin padding($n)
+  +_((padding: $n))
+
+@mixin padding-y($top, $bottom: $top)
+  +_((padding-top: $top, padding-bottom: $bottom))
+
+@mixin padding-x($left, $right: $left)
+  +_((padding-left: $left, padding-right: $right))
+
+@mixin padding-top($n)
+  +_((padding-top: $n))
+
+@mixin padding-bottom($n)
+  +_((padding-bottom: $n))
+
+@mixin padding-left($n)
+  +_((padding-left: $n))
+
+@mixin padding-right($n)
+  +_((padding-right: $n))

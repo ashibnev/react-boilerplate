@@ -1,9 +1,0 @@
-@mixin each-arr-nth($arr, $style) {
-  @each $item in $arr {
-    $i: index($arr, $item);
-
-    &:nth-child(#{$i}) {
-      #{$style}: #{$item};
-    }
-  }
-}
