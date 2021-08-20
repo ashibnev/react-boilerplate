@@ -1,24 +1,8 @@
-// import React, { useState } from 'react';
-// import { Header } from './Header.jsx';
-// import './App.sass';
-
-// export const App = () => {
-//   const [counter, setCounter] = useState(1);
-
-//   const increment = () => setCounter(counter + 1);
-//   return (
-//     <div className="App">
-//       <Header />
-//       <button onClick={increment}>+</button>
-//       <h1>{counter}</h1>
-//     </div>
-//   );
-// };
-
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import './App.sass';
 
-export function App() {
+export const App = () => {
   return (
     <Router>
       <div>
@@ -53,7 +37,15 @@ export function App() {
 }
 
 function Home() {
-  return <h2>Home</h2>;
+  const [counter, setCounter] = useState(1);
+
+  const increment = () => setCounter(counter + 1);
+  return (
+    <div className="App">
+      <button onClick={increment}>+</button>
+      <h1>{counter}</h1>
+    </div>
+  );
 }
 
 function About() {
